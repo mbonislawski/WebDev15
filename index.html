@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebDev 15</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="WebDev zadanie 15">
+	<meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#about">Industries</a></li>
+              <li><a href="#contact">Services</a></li>
+              <li><a href="#contact">News</a></li>
+              <li><a href="#contact">Who we are</a></li>
+              <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <ul class="dropdown-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Works</a></li>
+                  <li><a href="#about">Industries</a></li>
+                  <li><a href="#contact">Services</a></li>
+                  <li><a href="#contact">News</a></li>
+                  <li><a href="#contact">Who we are</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 heroimg">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 hero_slider">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="container">
+                                <h1>Agency 1</h1>
+                                <h2>Freebie psd download</h2>
+                                <div class="belt"></div>
+                                <p>Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. Aenean dictum eleifend mi sit amet luctus.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="container">
+                                <h1>Agency 2</h1>
+                                <h2>Freebie psd download</h2>
+                                <div class="belt"></div>
+                                <p>Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. Aenean dictum eleifend mi sit amet luctus.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="container">
+                                <h1>Agency 3</h1>
+                                <h2>Freebie psd download</h2>
+                                <div class="belt"></div>
+                                <p>Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. Aenean dictum eleifend mi sit amet luctus.</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- Left and right controls -->
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 clients">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-4 clients_header">
+                <h2>Our Clients</h2>
+                <a href="#">View all</a>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-1 triangle"></div>
+            <div class="col-md-8 col-sm-8 col-xs-7 logos">
+                <div class="row">
+                    <img src="img/logos/logo1.png" alt="logo1">
+                    <img src="img/logos/logo2.png" alt="logo2">
+                    <img src="img/logos/logo3.png" alt="logo3">
+                    <img src="img/logos/logo4.png" alt="logo4">
+                    <img src="img/logos/logo5.png" alt="logo5">
+                    <img src="img/logos/logo6.png" alt="logo6">
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 about">
+        <div class="container">
+            <div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6 col-xs-12 about_header">
+                <h1>Hello</h1>
+                <h2>lorem ipsum dolor sit amet</h2>
+                <div class="belt_orange"></div>
+                <p>Curabitur et dapibus leo. Donec eleifend pharetra sem, et interdum nunc semper vel. Sed interdum magna eu faucibus faucibus.</p>
+                <p>Nulla varius faucibus arcu, eget aliquet tortor sollicitudin ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sollicitudin felis quis varius porta. Donec sit amet diam a elit pulvinar pretium.</p>
+                <a href="#" class="button button_about">see more about us</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 experience">
+        <div class="row">
+            <div class="container">
+                <div class="col-md-6 col-sm-6 col-xs-12 experience_header">
+                    <h1>experience</h1>
+                    <h2>all expert digital services</h2>
+                    <div class="belt_orange"></div>
+                    <p>Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui.</p>
+                    <a href="#" class="button button_experience">see our services</a>
+                 </div>
+        
+                <div class="col-md-6 col-sm-6 col-xs-12 exp_icons">
+                    <div class="row exp_row">
+                        <div class="exp_icon">
+                            <img src="img/icons/icon_design.png">
+                            <h3>Website Design & Development</h3>
+                        </div>
+                        <div class="exp_icon">
+                            <img src="img/icons/icon_security.png">
+                            <h3>Web Security & Optimization</h3>
+                        </div>
+                        <div class="exp_icon">
+                            <img src="img/icons/icon_plane.png">
+                            <h3>Digital Marketing</h3>
+                        </div>
+                        <div class="exp_icon">
+                            <img src="img/icons/icon_conversion.png">
+                            <h3>Conversion Optimization</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 work">
+        <div class="row work_header">
+            <h1>Recent work</h1>
+            <div class="belt_orange belt_orange_work"></div>
+            <p>Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. </p>
+        </div>
+        <div class="row row_work">
+            <div class="col-md-5 col-sm-5 col-xs12 tablet"></div>
+            <div class="col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-6 col-xs12 customer_domain">
+                <h2>CustomerDomain.com</h2>
+                <p>Donec lacus leo, vestibulum et erat eget, viverra posuere est. Maecenas dapibus mi erat. Duis egestas tempus leo, non euismod velit dictum eu.</p>
+                <div class="belt_customer"></div>
+                <div class="client_description"><p>Client</p><p>Location</p><p>Services</p><p>Website link</p></div>
+                <div class="client_description"><p>:</p><p>:</p><p>:</p><p>:</p></div>
+                <div class="client_description"><p>Customer</p><p>U.K</p><p>Search Engine Optimization</p><a>www.CustomerDomain.com</a></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 other_works">
+        <div class="other_works_container">
+            <div class="other_logo"><img src="img/logos/other_logo1.png"></div>
+            <div class="other_logo"><img src="img/logos/other_logo2.png"></div>
+            <div class="other_logo"><img src="img/logos/other_logo1.png"></div>
+            <div style="clear:both"></div>
+        </div> 
+        <div class="row other_works_controll">
+            <div class="container">
+                <div class="works_controll controll_left"><img src="img/icons/controll_left.png"></div>
+                <a href="#" class="button button_other_works">Show all</a>
+                <div class="works_controll controll_right"><img src="img/icons/controll_right.png"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 industries">
+        <div class="container">
+            <div class="row row_industries">
+                <h1>we focus</h1>
+                <h2>on key industries</h2>
+                <div class="belt_orange"></div>
+                <p>Donec nulla justo, pharetra in nulla in, lacinia pulvinar nunc rutrum nisi vel nib.</p>
+            </div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/camera.png" alt="camera"><h3>Digital marketing</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/sport.png" alt="sport"><h3>sport & entertainment</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/health.png" alt="health"><h3>health & fitness</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/law.png" alt="law"><h3>Law firms and real estates</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/pro.png" alt="pro"><h3>professional services</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/fashion.png" alt="fashion"><h3>fashion & beauty</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/food.png" alt="food"><h3>food & beverage</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/games.png" alt="games"><h3>games & comics</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><img src="img/icons/travel.png" alt="travel"><h3>travel & hotels</h3></div></div>
+            <div class="industri_item"><div class="industri_item_container"><a href="#" class="button button_industries">Show all</a></div></div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 features">
+        <div class="col-md-6 col-sm-6 col-xs-12 features_img"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12 features_header">
+            <h1>Feature</h1>
+            <h2>Marketing Guide</h2>
+            <div class="belt_orange"></div>
+            <p>Etiam vitae dui quis mi pharetra facilisis. Aenean volutpat nisi dui, vel tempus metus euismod in. Quisque vitae volutpat nulla. Curabitur cursus leo lacus, a ullamcorper augue iaculis vel.</p>
+            <p>Cras in risus vitae leo feugiat lobortis euismod quis dui. Integer tempor urna quis quam volutpat, non consequat augue iaculis. Proin malesuada sem sagittis imperdiet rutrum. </p>
+            <a href="#" class="button button_features">See more</a>
+            <a href="#" class="button button_download">Download</a>
+        </div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 blog">
+        <div class="row blog_header">
+            <h1>Recent blog</h1>
+            <div class="belt_orange"></div>
+            <p>Donec nulla justo, pharetra in nulla in, lacinia pulvinar nunc. Nunc rutrum nisi<br> vel nibh cursus, nec vestibulum orci feugiat.</p>
+        </div>
+        <div class="container blog_container">
+            <div class="post">
+                <img src="img/blog_1.png">
+                <h4>Is there hope for SEO profession?</h4>
+                <p class="author">Post by Lawrence R. Smith</p>
+                <div class="belt_orange belt_orange_small"></div>
+                <p>Donec nulla justo, pharetra in nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel nibh cursus, nec vestibulum orci feugiat. Nunc in luctus lacus. Integer eget dui nisi. Integer mauris lacus.</p>
+                <a>Read more</a>
+            </div>
+            <div class="post">
+                <img src="img/blog_2.png">
+                <h4>Is there hope for SEO profession?</h4>
+                <p class="author">Post by Esperanza A. Johnson</p>
+                <div class="belt_orange belt_orange_small"></div>
+                <p>Donec nulla justo, pharetra in nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel nibh cursus, nec vestibulum orci feugiat. Nunc in luctus lacus. Integer eget dui nisi. Integer mauris lacus.</p>
+                <a>Read more</a>
+            </div>            
+            <div class="post">
+                <img src="img/blog_3.png">
+                <h4>Is there hope for SEO profession?</h4>
+                <p class="author">Post by Heather R. Williams</p>
+                <div class="belt_orange belt_orange_small"></div>
+                <p>Donec nulla justo, pharetra in nulla in, lacinia pulvinar nunc. Nunc rutrum nisi vel nibh cursus, nec vestibulum orci feugiat. Nunc in luctus lacus. Integer eget dui nisi. Integer mauris lacus.</p>
+                <a>Read more</a>
+            </div>
+        </div>
+        <div class="blog_row"><h3>+ load more</h3></div>
+    </div>
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 footer">
+        <div class="container footer_container">
+            <div class="footer_info">
+                <h2>agency creative</h2>
+                <p>&copy; 2015 k3nnyart. All rights reserved.</p>
+                <a>privacy policy</a>
+            </div>            
+            <div class="footer_info">
+                <h3>Address</h3>
+                <p>ABC Agency Creative</p>
+                <p>4111 Deer Haven Drive Greenville, SC 29601 </p>
+                <p>Hours: Mon-Fri 9am - 6:00pm</p>
+            </div>            
+            <div class="footer_info">
+                <h3>get in touch</h3>
+                <p>Tel: +1 234-567-890</p>
+                <p>Fax: +1 646-216-9789</p>
+                <p>Email: info@yourdomain.com</p>
+            </div>            
+            <div class="footer_info">
+                <h3>Subscribe to our mailing list</h3>
+                <!--<div class="form-group">
+                    <input type="email" class="form-control" id="mail" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary"></button>
+                </div>-->
+                <form class="form_controll">
+                    <input class="newsletter" type="email" placeholder="Enter your email">
+                    <button href="" class="button_footer" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function getScroll(){
+            let scroll = window.pageYOffset;
+            const menu = document.querySelector('.navbar');
+            if (scroll>0) {
+                menu.classList.add('sticky');
+            } else {
+                menu.classList.remove('sticky');
+            }
+        }
+        
+        document.addEventListener('scroll', getScroll);
+    </script>
+    
+</body>
+    
+</html>
