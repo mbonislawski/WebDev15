@@ -1894,6 +1894,21 @@ p {
         margin-top: 50px;
     }
 }
+@media (max-width:440px) {
+    .blog_container .post img {
+        max-width: 350px;
+    }
+}
+@media (max-width:400px) {
+    .blog_container .post img {
+        width: 300px;
+    }
+}
+@media (max-width:348px) {
+    .blog_container .post img {
+        width: 270px;
+    }
+}
 /*------------------footer---------------------------*/
 
 .footer {
