@@ -122,8 +122,15 @@ p {
 }
 
 .collapse.in .navbar-right {
+    position: absolute;
+    right: 0;
     height: 350px;
     background-color: #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    transition: all 0s;
 }
 
 .collapse.in .navbar-right li a {
@@ -266,6 +273,90 @@ p {
 @media (max-width:781px) {
     .navbar .container {
     margin-left: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        background-color: #28282e;
+        padding-bottom: 20px;
+    }
+    
+    .sticky .navbar-brand {
+        padding-top: 20px;
+        transition: all 0.3s;
+    }
+    
+    .navbar-brand {
+        padding-top: 5px;
+    }
+    .navbar-brand img{
+        line-height: 82px;
+    }
+        
+    .navbar-toggle {
+        margin-top: 10px;
+    }  
+    
+    .sticky .navbar-toggle {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:670px) {
+    .item .container h1 {
+        font-size: 70px;
+    }    
+    
+    .item .container h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:526px) {
+    .item .container h1 {
+        font-size: 50px;
+    }    
+    
+    .item .container h2 {
+        font-size: 35px;
+    }    
+    
+    .item .container p {
+        font-size: 13px;
+    }
+    
+    .carousel-indicators {
+    left: 40%;
+    }
+}
+
+@media (max-width:434px) {
+    .item .container h1 {
+        font-size: 40px;
+        margin-top: 0;
+    }    
+    
+    .item .container h2 {
+        font-size: 25px;
+    }    
+    
+    .item .container p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:320px) {
+    .item .container h1 {
+        font-size: 35px;
+    }    
+    
+    .item .container h2 {
+        font-size: 20px;
+    }    
+    
+    .item .container p {
+        font-size: 12px;
     }
 }
 
