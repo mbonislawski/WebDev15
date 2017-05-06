@@ -29,20 +29,20 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#about">Industries</a></li>
-              <li><a href="#contact">Services</a></li>
-              <li><a href="#contact">News</a></li>
-              <li><a href="#contact">Who we are</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#who">Who we are</a></li>
               <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
               <ul class="dropdown-menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Works</a></li>
-                  <li><a href="#about">Industries</a></li>
-                  <li><a href="#contact">Services</a></li>
-                  <li><a href="#contact">News</a></li>
-                  <li><a href="#contact">Who we are</a></li>
+                <li><a href="#works">Works</a></li>
+                  <li><a href="#industries">Industries</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#who">Who we are</a></li>
                   <li><a href="#contact">Contact</a></li>
               </ul>
             </li>
@@ -117,7 +117,7 @@
         </div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 about">
+    <div id="who" class="col-md-12 col-sm-12 col-xs-12 about">
         <div class="container">
             <div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6 col-xs-12 about_header">
                 <h1>Hello</h1>
@@ -130,7 +130,7 @@
         </div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 experience">
+    <div id="services" class="col-md-12 col-sm-12 col-xs-12 experience">
         <div class="row">
             <div class="container">
                 <div class="col-md-6 col-sm-6 col-xs-12 experience_header">
@@ -165,7 +165,7 @@
         </div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 work">
+    <div id="works" class="col-md-12 col-sm-12 col-xs-12 work">
         <div class="row work_header">
             <h1>Recent work</h1>
             <div class="belt_orange belt_orange_work"></div>
@@ -200,7 +200,7 @@
         </div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 industries">
+    <div id="industries" class="col-md-12 col-sm-12 col-xs-12 industries">
         <div class="container">
             <div class="row row_industries">
                 <h1>we focus</h1>
@@ -234,7 +234,7 @@
         </div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 blog">
+    <div id="news" class="col-md-12 col-sm-12 col-xs-12 blog">
         <div class="row blog_header">
             <h1>Recent blog</h1>
             <div class="belt_orange"></div>
@@ -269,7 +269,7 @@
         <div class="blog_row"><h3>+ load more</h3></div>
     </div>
     
-    <div class="col-md-12 col-sm-12 col-xs-12 footer">
+    <div id="contact" class="col-md-12 col-sm-12 col-xs-12 footer">
         <div class="container footer_container">
             <div class="footer_info">
                 <h2>agency creative</h2>
@@ -314,6 +314,14 @@
         }
         
         document.addEventListener('scroll', getScroll);
+        
+        $(document).on('click', 'a', function(event){
+	    event.preventDefault();
+	    $('body').animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top
+	    }, 700);
+	});
+        
     </script>
     
 </body>
