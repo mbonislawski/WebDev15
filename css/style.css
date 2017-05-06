@@ -197,7 +197,7 @@ p {
 
 .item .container {
     position: relative;
-    margin-top: 30%;
+    margin-top: 25%;
     width: 80%;
     padding-left: 9%;
 }
@@ -253,6 +253,14 @@ p {
     }
 }
 
+@media (max-width:1289px) {
+
+    .item .container {
+    margin-top: 70px;
+    }
+
+}
+
 @media (max-width:1000px) {
     .hero_slider {
         width: 70%;
@@ -260,7 +268,7 @@ p {
     .carousel-indicators {
         transform: rotate(0deg);
         left: 45%;
-        top: 90%;
+        top: 95%;
     }
 }
 
@@ -375,6 +383,7 @@ p {
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: #fff;
 }
 
 .clients h2 {
@@ -397,13 +406,15 @@ p {
     min-height: 100px;
     height: 100%;
     background-color: #f8f8f8;
+    margin-left: 0;
+    padding-left: 18rem;
 }
 
 .triangle {
 	width: 0;
 	height: 0;
-	border-bottom: 100px solid #fff;
-	border-left: 100px solid transparent;
+	border-top: 100px solid #f8f8f8;
+	border-right: 100px solid transparent;
 }
 
 .logos {
